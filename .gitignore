@@ -1,0 +1,62 @@
+# ===========================
+# Environment
+# ===========================
+.env
+.env.*
+!.env.example
+
+# ===========================
+# Docker volumes (local mount)
+# ===========================
+postgres_data/
+redis_data/
+n8n_data/
+
+# ===========================
+# n8n custom nodes (user-specific)
+# ===========================
+custom-nodes/
+
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# User scripts (keep only examples)
+python-runner/scripts/*
+!python-runner/scripts/hello.py
+!python-runner/scripts/requirements.txt
+
+# ===========================
+# Logs & Backups
+# ===========================
+*.log
+logs/
+*.sql
+*.backup
+
+# ===========================
+# OS
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# IDE & Editor
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===========================
+# Internal (not for public repo)
+# ===========================
+.claude/
+.dev/
