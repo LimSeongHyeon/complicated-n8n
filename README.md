@@ -115,11 +115,11 @@ The Python Runner is a FastAPI-based HTTP service that allows n8n workflows to e
 See `python-runner/scripts/hello.py` for a working example.
 
 From n8n, use an HTTP Request node to call:
-```
+```json
 POST http://python-runner:8000/run
 {
-  "script": "hello.py",
-  "args": ["--name", "World"]
+  "scriptName": "hello.py",
+  "parameters": {"name": "World"}
 }
 ```
 

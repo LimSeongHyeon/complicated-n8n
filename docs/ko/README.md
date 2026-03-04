@@ -122,11 +122,11 @@ Python Runner는 FastAPI 기반 HTTP 서버로, n8n 워크플로우에서 Python
 `python-runner/scripts/hello.py`에서 동작하는 예제를 확인하세요.
 
 n8n에서 HTTP Request 노드로 호출:
-```
+```json
 POST http://python-runner:8000/run
 {
-  "script": "hello.py",
-  "args": ["--name", "World"]
+  "scriptName": "hello.py",
+  "parameters": {"name": "World"}
 }
 ```
 
